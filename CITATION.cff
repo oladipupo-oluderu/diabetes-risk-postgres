@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Diabetes Risk Prediction Pipeline on PostgreSQL"
+version: "1.0.0"
+date-released: "2026-10-26"
+authors:
+  - family-names: "Oluderu"
+    given-names: "Oladipupo Ademola"
+    orcid: "https://orcid.org/0009-0005-6223-7016"
+repository-code: "https://github.com/oladipupo-oluderu/diabetes-risk-postgres"
+abstract: "SQL-backed machine learning pipeline for diabetes risk screening on the Pima Indians Diabetes dataset: PostgreSQL cleaning layers, tuned models, a recall-targeted screening threshold, Docker Compose and tests. A research prototype, not a diagnostic tool."
+keywords:
+  - postgresql
+  - machine learning
+  - diabetes
+  - clinical decision support
