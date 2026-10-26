@@ -1,5 +1,5 @@
 # Diabetes Risk Prediction Pipeline (PostgreSQL + Docker Compose) 
-[![DOI](https://zenodo.org/badge/DOI/ DOI: 10.5281/zenodo.23674618.svg)](https://doi.org/ DOI: 10.5281/zenodo.23674618) 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23674618.svg)](https://doi.org/10.5281/zenodo.23674618)
 
 End-to-end ML project on the Pima Indians Diabetes dataset (768 patients, 8 clinical
 features). Raw data lives in **PostgreSQL**, cleaning is done with SQL views, models are
