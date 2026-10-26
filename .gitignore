@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.env
+models/*.joblib
+venv/
+backups/
+resume.sh
+.DS_Store

@@ -1,0 +1,19 @@
+{
+  "logistic_regression": {
+    "cv_roc_auc_mean": 0.844,
+    "cv_roc_auc_std": 0.016,
+    "test_accuracy": 0.734,
+    "test_recall": 0.704,
+    "test_f1": 0.65,
+    "test_roc_auc": 0.813
+  },
+  "random_forest": {
+    "cv_roc_auc_mean": 0.838,
+    "cv_roc_auc_std": 0.024,
+    "test_accuracy": 0.74,
+    "test_recall": 0.759,
+    "test_f1": 0.672,
+    "test_roc_auc": 0.821
+  },
+  "selected_model": "logistic_regression"
+}

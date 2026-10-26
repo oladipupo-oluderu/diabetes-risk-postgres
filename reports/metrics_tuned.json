@@ -1,0 +1,92 @@
+{
+  "models": {
+    "logistic_regression": {
+      "best_params": {
+        "model__C": 0.31489116479568624
+      },
+      "cv_roc_auc_mean": 0.845,
+      "cv_roc_auc_std": 0.015,
+      "test_accuracy": 0.734,
+      "test_recall": 0.704,
+      "test_f1": 0.65,
+      "test_roc_auc": 0.811,
+      "auc_ci_low": 0.741,
+      "auc_ci_high": 0.872,
+      "n_train": 614,
+      "n_test": 154
+    },
+    "random_forest": {
+      "best_params": {
+        "model__n_estimators": 200,
+        "model__min_samples_leaf": 1,
+        "model__max_features": 0.5,
+        "model__max_depth": 4
+      },
+      "cv_roc_auc_mean": 0.841,
+      "cv_roc_auc_std": 0.021,
+      "test_accuracy": 0.747,
+      "test_recall": 0.796,
+      "test_f1": 0.688,
+      "test_roc_auc": 0.818,
+      "auc_ci_low": 0.746,
+      "auc_ci_high": 0.881,
+      "n_train": 614,
+      "n_test": 154
+    },
+    "hist_gradient_boosting": {
+      "best_params": {
+        "model__min_samples_leaf": 40,
+        "model__max_iter": 300,
+        "model__max_depth": 2,
+        "model__learning_rate": 0.02,
+        "model__l2_regularization": 5.0
+      },
+      "cv_roc_auc_mean": 0.84,
+      "cv_roc_auc_std": 0.014,
+      "test_accuracy": 0.753,
+      "test_recall": 0.815,
+      "test_f1": 0.698,
+      "test_roc_auc": 0.817,
+      "auc_ci_low": 0.744,
+      "auc_ci_high": 0.882,
+      "n_train": 614,
+      "n_test": 154
+    }
+  },
+  "selected_model": "logistic_regression",
+  "test_at_default_threshold": {
+    "threshold": 0.5,
+    "accuracy": 0.734,
+    "precision": 0.603,
+    "recall": 0.704,
+    "specificity": 0.75,
+    "f1": 0.65,
+    "tn": 75,
+    "fp": 25,
+    "fn": 16,
+    "tp": 38
+  },
+  "test_at_screening_threshold": {
+    "threshold": 0.411,
+    "accuracy": 0.721,
+    "precision": 0.571,
+    "recall": 0.815,
+    "specificity": 0.67,
+    "f1": 0.672,
+    "tn": 67,
+    "fp": 33,
+    "fn": 10,
+    "tp": 44
+  },
+  "brier_score": 0.181,
+  "permutation_importance": {
+    "pregnancies": 0.0262,
+    "glucose": 0.1547,
+    "blood_pressure": -0.0001,
+    "skin_thickness": -0.0002,
+    "insulin": 0.0007,
+    "bmi": 0.028,
+    "diabetes_pedigree_function": 0.0102,
+    "age": 0.0059
+  }
+}

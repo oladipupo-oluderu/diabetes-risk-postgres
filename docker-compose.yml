@@ -1,0 +1,30 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-diabetes_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-diabetes_pass}
+      POSTGRES_DB: ${POSTGRES_DB:-diabetes_db}
+    ports:
+      - "${DB_PORT:-5432}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-diabetes_user} -d ${POSTGRES_DB:-diabetes_db}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  app:
+    build: .
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql+psycopg2://${POSTGRES_USER:-diabetes_user}:${POSTGRES_PASSWORD:-diabetes_pass}@db:5432/${POSTGRES_DB:-diabetes_db}
+    volumes:
+      - ./reports:/app/reports
+      - ./models:/app/models
+
+volumes:
+  pgdata:
