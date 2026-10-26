@@ -118,8 +118,8 @@ diabetes-risk-postgres/
 
 ## Data source
 
-Pima Indians Diabetes Database (UCI / NIDDK). Cite the original source in any write-up.
+Pima Indians Diabetes Database (UCI / NIDDK).
 
 ## Author
 
-Demola | GitHub: oladipupo-oluderu
+Oluderu Oladipupo Ademola | GitHub: oladipupo-oluderu
